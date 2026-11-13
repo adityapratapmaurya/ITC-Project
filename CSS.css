@@ -12,3 +12,28 @@ body {
     background: #fffaf4;
     color: #292d24;
 }
+
+:root {
+    --orange: #ef8248;
+    --dark: #29352b;
+    --cream: #fff3e5;
+    --light: #ffffff;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 8%;
+    background: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--dark);
+    text-decoration: none;
+}
