@@ -164,7 +164,7 @@ window.addEventListener("scroll", () => {
     sections.forEach(sec => {
         if (window.scrollY >= sec.offsetTop - 160) current = sec.id;
     });
-    navLinks.forEach(link => {
+    navlink.foreach(link => {
         link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
     });
 });
