@@ -37,3 +37,560 @@ body {
     color: var(--dark);
     text-decoration: none;
 }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.nav-btn,
+.primary-btn {
+    background: var(--orange);
+    color: white;
+    padding: 13px 23px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-btn:hover,
+.primary-btn:hover {
+    background: #d76b33;
+    transform: translateY(-3px);
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 8%;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tagline {
+    color: var(--orange);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: var(--orange);
+    display: block;
+}
+
+.hero-content > p {
+    color: #666;
+    line-height: 1.8;
+    max-width: 470px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.secondary-btn {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 55px;
+    margin-top: 40px;
+}
+
+.hero-stats h2 {
+    color: var(--orange);
+    font-size: 28px;
+}
+
+.hero-stats p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.hero-image > img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 45% 45% 20px 20px;
+}
+
+.image-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 15px 22px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: -25px;
+    box-shadow: 0 5px 20px #00000015;
+}
+
+.image-label span {
+    font-size: 30px;
+}
+
+.image-label p {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading span,
+.about-content > span,
+.form-content > span {
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: #777;
+}
+
+
+/* DOG GALLERY */
+
+.dogs-section {
+    padding: 80px 8%;
+    background: var(--cream);
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.search-area input {
+    width: 350px;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+}
+
+.search-area input:focus {
+    border-color: var(--orange);
+}
+
+.search-area button {
+    background: var(--dark);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.dog-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.dog-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000010;
+    transition: 0.3s;
+}
+
+.dog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px #00000020;
+}
+
+.dog-card > img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.dog-info {
+    padding: 20px;
+}
+
+.available {
+    color: #329c62;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dog-info h3 {
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+.dog-info > p {
+    color: #777;
+    font-size: 13px;
+}
+
+.dog-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.dog-bottom > span {
+    color: #777;
+    font-size: 12px;
+}
+
+.adopt-btn {
+    background: var(--orange);
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.adopt-btn:hover {
+    background: #d76b33;
+}
+
+.no-results {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+
+/* ABOUT SECTION */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 90px 8%;
+}
+
+.about-image,
+.about-content {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.about-content h2,
+.form-content h2 {
+    font-size: 38px;
+    margin: 18px 0;
+}
+
+.about-content p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    list-style: none;
+    line-height: 2.5;
+    margin-bottom: 25px;
+}
+
+
+/* PROCESS SECTION */
+
+.process-section {
+    padding: 80px 8%;
+    background: var(--cream);
+}
+
+.process-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.process-card {
+    text-align: center;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.process-card:hover {
+    transform: translateY(-7px);
+}
+
+.process-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.process-card h3 {
+    margin-bottom: 15px;
+}
+
+.process-card p {
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* CONTACT FORM */
+
+.contact-section {
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+    padding: 90px 12%;
+}
+
+.form-content {
+    flex: 1;
+    padding-top: 30px;
+}
+
+.form-content p {
+    color: #777;
+    line-height: 1.8;
+}
+
+form {
+    flex: 1;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px #00000010;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    font-family: inherit;
+    outline: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: var(--orange);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: var(--orange);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#formMessage {
+    margin-top: 15px;
+    color: #329c62;
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+footer > p {
+    color: #ddd;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--orange);
+}
+
+.copyright {
+    border-top: 1px solid #ffffff30;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .dog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero {
+        padding: 45px 5%;
+    }
+
+    .about-section {
+        padding: 60px 5%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero,
+    .about-section,
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image > img {
+        height: 300px;
+    }
+
+    .image-label {
+        left: 5px;
+    }
+
+    .dog-container,
+    .process-container {
+        grid-template-columns: 1fr;
+    }
+
+    .search-area {
+        flex-direction: column;
+    }
+
+    .search-area input {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .about-content h2,
+    .form-content h2 {
+        font-size: 30px;
+    }
+
+    .contact-section {
+        padding: 60px 5%;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
