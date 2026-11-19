@@ -73,6 +73,116 @@
                     <p>Is waiting for you!</p>
                 </div>
             </div>
+            <section class="dogs-section" id="dogs">
+
+        <div class="section-heading">
+            <span>MEET YOUR NEW FAMILY</span>
+            <h2>Find Your Perfect Companion</h2>
+            <p>Meet our adorable friends waiting for a forever home.</p>
+        </div>
+
+        <div class="search-area">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search dog by name or breed..."
+            >
+
+            <button id="filterBtn">All Dogs</button>
+        </div>
+
+        <div class="dog-container" id="dogContainer">
+
+            <!-- DOG 1 -->
+            <div class="dog-card" data-name="buddy" data-breed="golden retriever">
+                <img
+                    src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=600"
+                    alt="Buddy the dog"
+                >
+
+                <div class="dog-info">
+                    <span class="available">● Available</span>
+                    <h3>Buddy</h3>
+                    <p>Golden Retriever • 2 Years</p>
+                    <div class="dog-bottom">
+                        <span>Male</span>
+                        <button class="adopt-btn" data-dog="Buddy">
+                            Adopt Me →
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- DOG 2 -->
+            <div class="dog-card" data-name="luna" data-breed="beagle">
+                <img
+                    src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=600"
+                    alt="Luna the dog"
+                >
+
+                <div class="dog-info">
+                    <span class="available">● Available</span>
+                    <h3>Luna</h3>
+                    <p>Beagle • 1 Year</p>
+                    <div class="dog-bottom">
+                        <span>Female</span>
+                        <button class="adopt-btn" data-dog="Luna">
+                            Adopt Me →
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- DOG 3 -->
+            <div class="dog-card" data-name="max" data-breed="indie">
+                <img
+                    src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600"
+                    alt="Max the dog"
+                >
+
+                <div class="dog-info">
+                    <span class="available">● Available</span>
+                    <h3>Max</h3>
+                    <p>Indie • 3 Years</p>
+                    <div class="dog-bottom">
+                        <span>Male</span>
+                        <button class="adopt-btn" data-dog="Max">
+                            Adopt Me →
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- DOG 4 -->
+            <div class="dog-card" data-name="coco" data-breed="pomeranian">
+                <img
+                    src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600"
+                    alt="Coco the dog"
+                >
+
+                <div class="dog-info">
+                    <span class="available">● Available</span>
+                    <h3>Coco</h3>
+                    <p>Pomeranian • 1.5 Years</p>
+                    <div class="dog-bottom">
+                        <span>Female</span>
+                        <button class="adopt-btn" data-dog="Coco">
+                            Adopt Me →
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            Sorry! No dogs found.
+        </p>
+
+    </section>
         </div>
 
     </section>
