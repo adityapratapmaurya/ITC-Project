@@ -211,3 +211,104 @@ header {
 .adopt-btn:hover { background: var(--primary-dark); }
 #noResults { text-align: center; margin-top: 30px; font-weight: 600; color: var(--primary); }
 
+/* ===== ABOUT SECTION ===== */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+.about-content p { color: var(--muted); margin: 15px 0 22px; }
+.about-content ul { list-style: none; display: grid; gap: 10px; font-weight: 600; }
+
+/* ===== PROCESS SECTION ===== */
+.process { background: var(--white); }
+.process-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 28px;
+}
+.process-card {
+    text-align: center;
+    padding: 38px 24px;
+    background: var(--bg-warm);
+    border-radius: var(--radius);
+    transition: transform 0.3s;
+}
+.process-card:hover { transform: translateY(-6px); }
+.process-card h1 { font-size: 2.8rem; margin-bottom: 12px; }
+.process-card h3 { margin-bottom: 8px; }
+.process-card p { color: var(--muted); font-size: 0.95rem; }
+
+/* ===== CONTACT FORM ===== */
+#adoptionForm {
+    max-width: 580px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 36px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#adoptionForm label { font-weight: 600; font-size: 0.92rem; margin-top: 4px; }
+#adoptionForm input, #adoptionForm select, #adoptionForm textarea {
+    padding: 12px 15px;
+    border: 1.8px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+#adoptionForm input:focus, #adoptionForm select:focus, #adoptionForm textarea:focus {
+    border-color: var(--primary);
+}
+#adoptionForm textarea { min-height: 110px; resize: vertical; }
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit-btn:hover { background: var(--primary-dark); }
+#formMessage { text-align: center; font-weight: 600; color: #059669; margin-top: 6px; }
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--dark);
+    color: #cbd5e1;
+    text-align: center; 
+    padding: 45px 8% 30px;
+}
+footer h2 { color: var(--primary); margin-bottom: 8px; }
+.footer-links { display: flex; justify-content: center; gap: 24px; margin: 18px 0; }
+.footer-links a { color: var(--white); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+.footer-links a:hover { color: var(--primary); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 850px) {
+    .nav-links { display: none; }
+    .hero, .about { grid-template-columns: 1fr; text-align: center; }
+    .hero-content h1 { font-size: 2.4rem; }
+    .hero-content p { margin: 0 auto 24px; }
+    .stats { justify-content: center; }
+    .hero-image img, .about-image img { height: 320px; }
+    .about-content ul { justify-items: center; }
+    .search-box { flex-direction: column; }
+    #adoptionForm { padding: 25px; }
+}
