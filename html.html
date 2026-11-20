@@ -3,332 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>PAWSPER | Find Your Best Friend</title>
-
+    <title>PAWSPER | Dog Adoption</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">🐾 PAWSPER</a>
-
+            <h2 class="logo">🐾 PAWSPER</h2>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#dogs">Find a Dog</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#process">How It Works</a></li>
+                <li><a href="#dogs">Our Dogs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <a href="#contact" class="nav-btn">Adopt Now</a>
+            <a href="#dogs" class="nav-btn">Adopt Now</a>
         </nav>
     </header>
     <section class="hero" id="home">
-
         <div class="hero-content">
-            <span class="tagline">❤️ GIVE LOVE, GET LOVE</span>
-
-            <h1>
-                Find Your New
-                <span>Best Friend.</span>
-            </h1>
-
-            <p>
-                Every dog deserves a loving home.
-                Open your heart and give a furry friend
-                a second chance at happiness.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#dogs" class="primary-btn">
-                    Meet Our Dogs →
-                </a>
-
-                <a href="#about" class="secondary-btn">
-                    Learn More
-                </a>
-            </div>
-
-            <div class="hero-stats">
-                <div>
-                    <h2>500+</h2>
-                    <p>Dogs Adopted</p>
-                </div>
-
-                <div>
-                    <h2>100%</h2>
-                    <p>Pure Love</p>
-                </div>
+            <h4>WELCOME TO PAWSPER</h4>
+            <h1>Find Your New Best Friend!</h1>
+            <p>Every dog deserves a loving home. Adopt a furry friend and give them a beautiful life full of happiness.</p>
+            <a href="#dogs" class="main-btn">Explore Dogs →</a>
+            <div class="stats">
+                <div><h2>500+</h2><p>Happy Adoptions</p></div>
+                <div><h2>100%</h2><p>Pure Love</p></div>
             </div>
         </div>
-
-        <div class="hero-image">
-            <img
-                src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=900"
-                alt="Happy golden retriever"
-            >
-            <div class="image-label">
-                <span>🐶</span>
-                <div>
-                    <strong>Your new friend</strong>
-                    <p>Is waiting for you!</p>
-                </div>
-            </div>
-            <section class="dogs-section" id="dogs">
-
-        <div class="section-heading">
-            <span>MEET YOUR NEW FAMILY</span>
+        <div class="hero-image"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=900" alt="Golden Retriever"></div>
+    </section>
+    <section class="dogs-section" id="dogs">
+        <div class="heading">
+            <h4>MEET OUR FRIENDS</h4>
             <h2>Find Your Perfect Companion</h2>
-            <p>Meet our adorable friends waiting for a forever home.</p>
+            <p>These adorable dogs are waiting for you.</p>
         </div>
-
-        <div class="search-area">
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="🔍 Search dog by name or breed..."
-            >
-
-            <button id="filterBtn">All Dogs</button>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search dog by name or breed...">
+            <button id="filterBtn">Show All</button>
         </div>
-
-        <div class="dog-container" id="dogContainer">
-
-            <!-- DOG 1 -->
-            <div class="dog-card" data-name="buddy" data-breed="golden retriever">
-                <img
-                    src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=600"
-                    alt="Buddy the dog"
-                >
-
+        <div class="dog-container">
+            <div class="dog-card" data-name="buddy" data-breed="labrador">
+                <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=600" alt="Buddy">
                 <div class="dog-info">
-                    <span class="available">● Available</span>
+                    <span>● Available</span>
                     <h3>Buddy</h3>
-                    <p>Golden Retriever • 2 Years</p>
-                    <div class="dog-bottom">
-                        <span>Male</span>
-                        <button class="adopt-btn" data-dog="Buddy">
-                            Adopt Me →
-                        </button>
-                    </div>
+                    <p>Labrador • 2 Years</p>
+                    <button class="adopt-btn" data-dog="Buddy">Adopt Me</button>
                 </div>
             </div>
-
-
-            <!-- DOG 2 -->
             <div class="dog-card" data-name="luna" data-breed="beagle">
-                <img
-                    src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=600"
-                    alt="Luna the dog"
-                >
-
+                <img src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=600" alt="Luna">
                 <div class="dog-info">
-                    <span class="available">● Available</span>
+                    <span>● Available</span>
                     <h3>Luna</h3>
                     <p>Beagle • 1 Year</p>
-                    <div class="dog-bottom">
-                        <span>Female</span>
-                        <button class="adopt-btn" data-dog="Luna">
-                            Adopt Me →
-                        </button>
-                    </div>
+                    <button class="adopt-btn" data-dog="Luna">Adopt Me</button>
                 </div>
             </div>
-
-
-            <!-- DOG 3 -->
             <div class="dog-card" data-name="max" data-breed="indie">
-                <img
-                    src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600"
-                    alt="Max the dog"
-                >
-
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600" alt="Max">
                 <div class="dog-info">
-                    <span class="available">● Available</span>
+                    <span>● Available</span>
                     <h3>Max</h3>
                     <p>Indie • 3 Years</p>
-                    <div class="dog-bottom">
-                        <span>Male</span>
-                        <button class="adopt-btn" data-dog="Max">
-                            Adopt Me →
-                        </button>
-                    </div>
+                    <button class="adopt-btn" data-dog="Max">Adopt Me</button>
                 </div>
             </div>
-
-
-            <!-- DOG 4 -->
             <div class="dog-card" data-name="coco" data-breed="pomeranian">
-                <img
-                    src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600"
-                    alt="Coco the dog"
-                >
-
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600" alt="Coco">
                 <div class="dog-info">
-                    <span class="available">● Available</span>
+                    <span>● Available</span>
                     <h3>Coco</h3>
                     <p>Pomeranian • 1.5 Years</p>
-                    <div class="dog-bottom">
-                        <span>Female</span>
-                        <button class="adopt-btn" data-dog="Coco">
-                            Adopt Me →
-                        </button>
-                    </div>
+                    <button class="adopt-btn" data-dog="Coco">Adopt Me</button>
                 </div>
             </div>
-
         </div>
-
-        <p id="noResults" class="no-results" hidden>
-            Sorry! No dogs found.
-        </p>
-
+        <p id="noResults" hidden>No dogs found!</p>
     </section>
-        </div>
-
-    </section>
-    <section class="about-section" id="about">
-
-        <div class="about-image">
-            <img
-                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900"
-                alt="Two happy dogs"
-            >
-        </div>
-
+    <section class="about" id="about">
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=900" alt="Happy dogs"></div>
         <div class="about-content">
-            <span>OUR MISSION</span>
-
-            <h2>Every Dog Deserves a Loving Home.</h2>
-
-            <p>
-                PAWSPER is a platform created to connect
-                homeless dogs with caring families.
-                We believe every animal deserves love,
-                protection and a happy life.
-            </p>
-
+            <h4>ABOUT PAWSPER</h4>
+            <h2>Give Them A Second Chance</h2>
+            <p>PAWSPER connects homeless dogs with loving families. Our mission is to make every dog's life happier.</p>
             <ul>
-                <li>✓ Find loving companions</li>
-                <li>✓ Support animal welfare</li>
-                <li>✓ Give abandoned dogs a new life</li>
+                <li>✔️ Safe adoption process</li>
+                <li>✔️ Loving forever homes</li>
+                <li>✔️ Support animal welfare</li>
             </ul>
-
-            <a href="#contact" class="primary-btn">
-                Become a Pet Parent →
-            </a>
         </div>
-
     </section>
-
-
-    <!-- ADOPTION PROCESS -->
-    <section class="process-section" id="process">
-
-        <div class="section-heading">
-            <span>THREE SIMPLE STEPS</span>
-            <h2>How Adoption Works</h2>
-            <p>Your journey towards unconditional love starts here.</p>
+    <section class="process" id="process">
+        <div class="heading">
+            <h4>HOW IT WORKS</h4>
+            <h2>Adopt In Three Easy Steps</h2>
         </div>
-
         <div class="process-container">
-
-            <div class="process-card">
-                <div class="process-icon">🐕</div>
-                <h3>01. Choose</h3>
-                <p>Find a dog that matches your lifestyle and personality.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="process-icon">📝</div>
-                <h3>02. Apply</h3>
-                <p>Fill out our simple adoption application form.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="process-icon">❤️</div>
-                <h3>03. Welcome Home</h3>
-                <p>Complete the adoption process and welcome your new friend.</p>
-            </div>
-
+            <div class="process-card"><h1>🐶</h1><h3>Choose a Dog</h3><p>Find your favourite companion.</p></div>
+            <div class="process-card"><h1>📝</h1><h3>Fill The Form</h3><p>Submit your adoption application.</p></div>
+            <div class="process-card"><h1>❤️</h1><h3>Welcome Home</h3><p>Give your new friend a loving home.</p></div>
         </div>
-
     </section>
-    <section class="contact-section" id="contact">
-
-        <div class="form-content">
-            <span>START YOUR JOURNEY</span>
-            <h2>Ready to Adopt?</h2>
-            <p>Fill out the form and take the first step towards a beautiful friendship.</p>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h4>ADOPTION APPLICATION</h4>
+            <h2>Become A Pet Parent</h2>
+            <p>Fill in the details to start your journey.</p>
         </div>
-
         <form id="adoptionForm">
-
-            <label for="name">Your Full Name</label>
-            <input
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-                required
-            >
-
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
             <label for="email">Email Address</label>
-            <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                required
-            >
-
-            <label for="dogName">Choose Your Dog</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="dogName">Select Your Dog</label>
             <select id="dogName" required>
-                <option value="">Select a dog</option>
-                <option value="Buddy">Buddy</option>
-                <option value="Luna">Luna</option>
-                <option value="Max">Max</option>
-                <option value="Coco">Coco</option>
+                <option value="">Choose a dog</option>
+                <option>Buddy</option>
+                <option>Luna</option>
+                <option>Max</option>
+                <option>Coco</option>
             </select>
-
-            <label for="message">Why do you want to adopt?</label>
-            <textarea
-                id="message"
-                placeholder="Tell us something about yourself..."
-                rows="4"
-                required
-            ></textarea>
-
-            <button type="submit" class="submit-btn">
-                Submit Application ❤️
-            </button>
-
-            <p id="formMessage" aria-live="polite"></p>
-
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Why do you want to adopt?" required></textarea>
+            <button type="submit" class="submit-btn">Submit Application ❤️</button>
+            <p id="formMessage"></p>
         </form>
-
     </section>
-
-
-    <!-- FOOTER -->
     <footer>
-
         <h2>🐾 PAWSPER</h2>
-
-        <p>Making the world a better place, one paw at a time.</p>
-
+        <p>Every Paw Deserves Love.</p>
         <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#dogs">Dogs</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#home">Home</a> <a href="#dogs">Dogs</a> <a href="#about">About</a> <a href="#contact">Contact</a>
         </div>
-
-        <p class="copyright">
-            © 2026 PAWSPER. All Rights Reserved.
-        </p>
-
+        <p>© 2026 PAWSPER. All Rights Reserved.</p>
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
 </html>
